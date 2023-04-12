@@ -1,0 +1,181 @@
+body {
+    width: 100%;
+    background: url("Background.jpg");
+    background-size: cover;
+    /* background-color: bisque; */
+}
+
+#header, #nav, #content {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+#nav 
+{
+    background: linear-gradient(to right, #616161, #f0efef);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    border-radius: 10px;
+    /* margin: 20px 0; */
+    width: 92%;
+}
+
+li {
+    display: inline;
+    padding-left: 1em;
+}
+
+#pencarian {
+    width: fit-content;
+    color: whitesmoke;
+    position: relative;
+    float: right;
+    right: 1em;
+    bottom: 2.6em;
+    margin-right: 3%;
+} */
+
+#input {
+    border-radius: 7px;
+    padding: 0.5em;
+    border: none;
+}
+
+#content {
+    width: 60%;
+    float: left;
+    background-color: white;
+    border-radius: 10px;
+    margin-right: 0px;
+    margin-top: 20px;
+}
+
+#content h1, #content a, #content img, #content p {
+    padding-left: 3%;
+    padding-top: 3%;
+    padding-right: 3%;
+}
+
+#content img {
+    width: 93%;
+}
+
+#content iframe {
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 3%;
+    width: 93%;
+    height: 400px;
+}
+
+#sidebar {
+    width: 30%;
+    float: right;
+    border-radius: 13px;
+    padding-left: 3%;
+    padding: 1em 1.5em;
+    background: #f0efef;
+    margin-bottom: 10px;
+    margin-right: 35px;
+    margin-top: 0px;
+}
+
+#flicker {
+    background: #f0efef;
+    border-radius: 10px;
+    padding: 1em 1.5em;
+    width: 30%;
+    float: right;
+    margin-bottom: 10px;
+    margin-right: 35px;
+    margin-top: 20px;
+}
+
+#flicker img  {
+    margin-right: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-top: 5px;
+    width: 21%;
+}
+
+@media screen and (max-width :1200px) {
+    #sidebar, #flicker {
+        width: 30% ;
+    }
+    #flicker img{
+        width: 21%;
+    }
+    #content iframe{
+        width: 80%;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 820px){
+    #content {
+        width: 55%;
+    }
+    #nav
+    {
+        width: 89%;
+    }
+    #sidebar, #flicker {
+        width: 35%;
+        padding-left: 10px;
+        padding-right: 10px; 
+    }
+    #sidebar
+    {
+        margin-top: 20px;
+    }
+    #flicker img {
+        width: 29%;
+        margin: 10px 5px 10px 5px;
+    }
+    content iframe {
+        width: 100%;
+        height: 225px;
+    }
+}
+@media screen and (max-width: 500px) {
+    #sidebar, #flicker
+    {
+        margin-left: 7px;
+        margin-right: 25px;
+        width: 90%;
+        padding-left: 7px;
+        padding-right: 5px;
+    }
+    #content
+    {
+        width: 89%;
+        margin-left: 15px;
+        margin-right: 5px;
+        padding-left: 3%;
+        padding-right: 0;
+    }
+    #content iframe {
+      width: 92%;
+      height: 230px;
+    }
+    #nav
+    {
+        width: 89%;
+        padding-left: 10px;
+        padding-right: 3%;
+    }
+    input{
+        position: absolute;
+        display: none;
+    }
+    #nav input{
+        display: flex;
+        margin-right: 150px;
+        width: 20%;
+        top: 10%;
+        padding-right: 50px;
+    }
+  }
